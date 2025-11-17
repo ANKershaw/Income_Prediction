@@ -70,6 +70,7 @@ adults = [
 answers = [0.002607,0.018577,0.004460,0.202992,0.550278,0.119872,0.486905,0.317298,0.800876,0.237507]
 #url = 'http://127.0.0.1:9696/predict',
 url = 'https://damp-field-1507.fly.dev/predict'
+print(f'note: it may take up to 30 seconds for the data to be returned.')
 for i, adult in enumerate(adults):
 	response = requests.post(url=url, json=adult)
 	print(response.json())
