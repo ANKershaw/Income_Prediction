@@ -24,14 +24,14 @@ In your terminal:
 <br></br>
 ## If you want to test the deployed service
 I've provided a script to do this. You can run it via: <br>
-`uv run income_prediction.py .`<br>
+`uv run income_prediction.py`<br>
 <br>
 The service is currently deployed here: https://damp-field-1507.fly.dev/predict <br>
 The swagger page is here: https://damp-field-1507.fly.dev/docs <br>
 The service will stay running until January 1, 2026, unless fly.io becomes prohibitively expensive. 
 
 ## If you want to deploy the docker container locally
-1. Build the container `docker build -t income-prediction`
+1. Build the container `docker build -t income-prediction .`
 2. Run the service `docker run -it --rm -p 9696:9696 income-prediction`
 <br></br>
 ### How to test a local deploy 
